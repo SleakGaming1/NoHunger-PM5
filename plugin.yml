@@ -8,9 +8,9 @@
 #                                 |___/
 
 name: NoHunger
-description: A plugin that disables hunger using PocketMine API
+description: A plugin that disables hunger on your Pocketmine 5.0.0 server.
 author: Diduhless
 website: https://twitter.com/Diduhless
 main: Diduhless\NoHunger\NoHunger
-version: "1.0.0"
-api: 3.0.0
+version: "1.0.1"
+api: 5.0.0
