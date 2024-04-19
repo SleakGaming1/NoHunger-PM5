@@ -20,7 +20,7 @@ class NoHunger extends PluginBase implements Listener {
     /**
      * @param PlayerExhaustEvent $event
      */
-    public function onPlayerExhaust(PlayerExhaustEvent $event): void {
+    public function onHunger(PlayerExhaustEvent $event): void {
         $event->cancel();
     }
 
