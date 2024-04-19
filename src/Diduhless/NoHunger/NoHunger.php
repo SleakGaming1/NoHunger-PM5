@@ -11,7 +11,7 @@ use pocketmine\plugin\PluginBase;
 
 class NoHunger extends PluginBase implements Listener {
 
-    public function onEnable() {
+    public function onEnable(): void {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
 
         $this->getLogger()->info("§8[§6NoHunger§8] NoHunger has been enabled!");
@@ -20,8 +20,8 @@ class NoHunger extends PluginBase implements Listener {
     /**
      * @param PlayerExhaustEvent $event
      */
-    public function onExhaust(PlayerExhaustEvent $event): void {
-        $event->setCancelled();
+    public function onPlayerExhaust(PlayerExhaustEvent $event): void {
+        $event->cancel();
     }
 
 }
